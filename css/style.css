@@ -50,10 +50,10 @@ nav li a{
 /* header and hero section */
 .header{
     background-color: #FFF8F3;
-    background-image: url('../images/header_bg.png');
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
-    background-position: bottom right; 
-
+    background-position: bottom right, top left; 
+    padding: 51px 0;
 }
 .banner{
     padding: 30px 30px  0px 150px;
@@ -205,4 +205,52 @@ hr{
 .cv-btn{
     text-align: center;
     margin-top: 50px;
+}
+
+/* Footer CSS */
+
+footer{
+    background: #FFF8F3;
+    padding: 130px 0;
+}
+.footer-area{
+    max-width: 1140px;
+    margin:  0px auto;
+    display: flex;
+    gap: 100px;
+    justify-content: space-between; 
+}
+.footer-column{
+    width: 50%;
+}
+.footer-column-title{
+    color: #181818;
+    font-size: 35px;
+    font-weight: 700;
+    
+}
+
+.footer-column-description{
+    color: #474747;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    margin: 20px 0 30px 0;
+}
+.social-icon img{
+    margin-right: 24px;
+}
+
+form>input, textarea{
+    width: 100%;
+    padding: 18px 30px;
+    border-radius: 5px;
+    background:  #FFF;
+    margin: 12px 0;
+    border: none;
+    outline: none;
+    color:  #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
 }
