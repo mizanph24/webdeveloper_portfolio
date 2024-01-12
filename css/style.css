@@ -41,7 +41,7 @@ nav > ul{
 
 nav li{
     list-style: none;
-    margin-right: 50px;
+    padding: 0 20px;
 }
 nav li a{
     text-decoration: none;
@@ -50,14 +50,13 @@ nav li a{
 
 /* header and hero section */
 .header{
-     
-
     background-color: #FFF8F3;
     background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right, center left; 
-    /* height: 800px; */
+  
     padding: 51px 0 0 0;
+    width: 100%;
 }
 .banner{
     padding: 30px 30px  0px 150px;
@@ -96,7 +95,7 @@ nav li a{
 
 /* Main CSS */
 main{
-    max-width: 1140px;
+    max-width:3 1140px;
     margin:  0px auto; 
 }
 /* About CSS */
@@ -267,7 +266,10 @@ form>input, textarea{
     font-weight: 400;
     line-height: 28px; /* 175% */
 }
-
+/* section hide */
+.hide{
+   display: none;
+}
 @media screen and (max-width:576px) {
     nav{
        margin: 0px;
@@ -294,7 +296,7 @@ form>input, textarea{
     main{
         max-width: 576px;
         margin:  0px auto; 
-        /* padding: 0 50px; */
+        
     }
     /* About */
 
@@ -371,6 +373,110 @@ footer{
     /* margin: 12px 0; */
     
 }
+}
+
+@media only screen and (max-width: 768px) {
+    nav{
+        width: 90%;
+        margin: 0px auto;
+         
+     }
+     .banner{
+         /* padding: 0px 40px; */
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         text-align: center;
+         margin: 0 auto;
+     }
+     .banner .profile_picture{
+         width: 400px;
+         margin-top: 60px;
+     }
+     .btn_primary{
+         margin: 10px 0;
+         padding: 15px 36px;
+     }
 
 
+       /* About */
+
+.about{
+        padding: 100px 20px;
+        margin: 70px 0;
+      
+        background: #FFF8F3;   
+        
+    }
+
+.about-info-container{
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+/* What-i-do CSS */
+.what-i-do-description{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+    
+}
+.skill-cotainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+.skill{
+    width: 40%;
+}
+/* Resume CSS */
+.resume-area{
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+.resume-column-title{
+    background-color: rgb(190, 253, 190);
+    width: 50%;
+   }
+   .resume-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 71px;
+    padding: 0 10px;
+
+}
+.resume-item{
+    padding: 0 10px;
+}
+/* Footer CSS */
+footer{
+    padding: 20px;
+    text-align: center;
+}
+.footer-area{
+    text-align: center;
+    max-width: 576px;
+    display: flex;
+    gap: 0px;
+    flex-direction: column; 
+}
+.footer-column{
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+}
+.footer-column > form>input, textarea{
+    width: 80%;
+    padding: 18px 30px;
+    border-radius: 5px;
+    background:  #e0e0e0;
+    /* margin: 12px 0; */
+    
+}
 }
