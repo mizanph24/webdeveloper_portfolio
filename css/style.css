@@ -13,8 +13,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     margin: 0 200px;
-    
-}
+    margin: auto;
+    }
 
 .text_primary{
     color: #FD6E0A;
@@ -278,8 +278,13 @@ form>input, textarea{
 }
 @media screen and (max-width:576px) {
     nav{
-       margin: 0px;
-        
+    
+    flex-direction: column;
+    margin: 100px 0px;
+    margin: auto;
+    }
+    nav > ul{
+        margin: 20px 0;
     }
     .banner{
         padding: 0px 40px;
@@ -382,6 +387,7 @@ footer{
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+    
     .banner{
          /* padding: 0px 40px; */
          display: flex;
